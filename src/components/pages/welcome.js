@@ -2,9 +2,10 @@ import '../styles/welcome.css'
 
 import { FaFacebook, FaGithub, FaGoogle, FaTwitter } from 'react-icons/fa'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
-import React, { Fragment, useState } from 'react'
+import React, { useState } from 'react'
 
 import Modal from './modal'
+import Modal1 from './modal1'
 import group from '../images/Group 33806 (1).png'
 import logo from '../images/logo.png'
 import signupwith from '../images/signupwith.png'
@@ -20,6 +21,7 @@ const Welcome = () => {
     const closeSignIn = () => setSignIn(false);
 
     const [welcome, setWelcome] = useState(false);
+    const openWelcome = () => setWelcome(!welcome);
     const Closewelcome = () => setWelcome(false);
 
     return (
@@ -28,7 +30,7 @@ const Welcome = () => {
             <div>
                 <div className="logo-wrapper">
                 <img src={logo} alt={ logo.name} />
-                </div>
+                </div><br /> <butto onClick={openWelcome}>show</butto>
                 <div className='group'>
                 <article>
                     <h3>Welcome</h3>
@@ -36,7 +38,7 @@ const Welcome = () => {
                 </article>
                 </div>
                 <div className="bottom-links">
-                <span href="../pages/login.js" className="link sign-in" onClick={openSignIn}>sign in</span>
+                    <span href="../pages/login.js" className="link sign-in" onClick={openSignIn}>sign in</span>
                     <span href="../pages/register" className="link sign-up" onClick={ Open }>sign up</span>
                 </div>
             </div>
@@ -114,13 +116,17 @@ const Welcome = () => {
 
             }
 
-            <Modal onClose={ Closewelcome}>
-                <div>
-                    <h3>Hellow user!, how do you want to sign in?</h3>
+            {welcome &&
+                <Modal1 Stop={Closewelcome}>
+                    <div>
+                        <h1>Hellow user!!</h1>
+                        <p>How do you want to be signed in</p>
+                        <button><a href="doctor"> Doctor</a></button><br />
+                        <button ><a href="register"> Patient </a></button>
+                    </div>
+                </Modal1>
+            }
 
-                    <span></span>
-                </div>
-            </Modal>
 
         </div>
 

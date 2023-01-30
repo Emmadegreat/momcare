@@ -1,14 +1,9 @@
 import '../styles/modal.css'
 
-import React, {useState} from 'react'
-
+import React from 'react'
 import { createPortal } from 'react-dom'
 
-const Modal = ({ isOpen, children, onClose, Closewelcome }) => {
-    //if (isOpen) {
-        //return null;
-    //}
-
+const Modal = ({ children, onClose, Closewelcome }) => {
 
     const button = {
         width: '40px',
@@ -23,9 +18,7 @@ const Modal = ({ isOpen, children, onClose, Closewelcome }) => {
             <div className="overlay" onClick={onClose}></div>
             <div className='modal-content'>
 
-                <span onClick={Closewelcome}>As a doctor</span><br />
                 {children}
-
 
             </div>
 
