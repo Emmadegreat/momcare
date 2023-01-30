@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './components/styles/app.css'
+
+import { Route, Router, BrowserRouter as Routes } from 'react-router-dom'
+
+import Login from './components/pages/login'
+//import Modal from './components/pages/modal'
+import React from 'react'
+import Register from './components/pages/register'
+import Welcome from './components/pages/welcome';
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+        <Welcome />
+
+      </div>
+
+
   );
 }
 
