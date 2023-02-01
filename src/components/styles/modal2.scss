@@ -36,6 +36,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+
             & h4{
                 font-size: 22px;
                 text-align: center;
@@ -133,6 +134,34 @@
             }
 
         }
+        & .newpasswordForm{
+            padding-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & h4{
+                font-size: 22px;
+                text-align: center;
+                margin-bottom: 0.2rem;
+                font-family: Poppins;
+            }
+            & .button{
+                width: 240px;
+                color: #fff;
+                background:#6D1538;
+                max-width: 100%;
+                padding: 0.3rem;
+                height: 30px;
+                border-radius: 0.3rem;
+                font-weight: bold;
+                margin: 4rem auto 4rem auto;
+            }
+
+
+        }
+
     }
 
 }

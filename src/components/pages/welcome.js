@@ -15,6 +15,7 @@ import Modal1 from './modal1'
 import Modal2 from './modal2';
 import NativeSelect from '@mui/material/NativeSelect'
 import { Select } from '@mui/material'
+import { Stack } from '@mui/system';
 import TextField from '@mui/material/TextField';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
@@ -279,7 +280,7 @@ const Welcome = () => {
         {/*========change password============*/}
 
         {//forgotpass &&
-          <Modal onClose={closeSignIn}>
+          <Modal2>
             <form action="" className='newpasswordForm'>
               <h4>Enter new password</h4>
               <FormControl sx={{ m: 1, width: '26ch' }} variant="standard">
@@ -294,22 +295,21 @@ const Welcome = () => {
                 />
               </FormControl>
 
-              <FormControl sx={{ m: 1, width: '26ch' }} variant="standard">
-                <InputLabel htmlFor="standard-adornment-newPassword">Confirm password</InputLabel>
-                <Input
-                  endAdornment={
-                    <InputAdornment position="end">
 
-                    </InputAdornment>
-                  }
-                  type="password"
+              <Stack>
+                <TextField
+                  sx={{ m: 1, width: '26ch' }}
                   placeholder='Re enter your new password'
+                  variant='standard'
+                  type="password"
+                  label="Confirm password"
+                  helperText="Both passwords must match"
                 />
-              </FormControl><br />
-              <p>Both passwords must match</p>
+              </Stack>
+
               <button className='button' type='submit'>Submit</button>
             </form>
-          </Modal>
+          </Modal2>
 
         }
 
