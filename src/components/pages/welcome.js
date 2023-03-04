@@ -57,7 +57,7 @@ const Welcome = () => {
         <div>
           <div className="logo-wrapper">
             <img src={logo} alt={ logo.name} />
-          </div><br /> <butto onClick={openWelcome}>show</butto>
+          </div><br />
           <div className='group'>
             <article>
               <h3>Welcome</h3>
@@ -70,8 +70,8 @@ const Welcome = () => {
           </div>
         </div>
 
-             {/*========register modal============*/}
-        {isModalOpened &&
+        {/*========register modal============*/}
+        {/*isModalOpened &&
           <Modal onClose={Close}>
             <form action="">
               <h4>Get Started</h4>
@@ -130,7 +130,7 @@ const Welcome = () => {
                         <legend>
                             <label htmlFor="email">Email</label>
                             <input type="email" name='email' placeholder='Enter your email' />
-                        </legend>*/}
+                              </legend>}
                         <div className='checkbox-wrapper'>
                             <input type="checkbox" name="checkbox" id='checkbox'/>
                             <span>I agree to the processing of<a href="data_protection"> Personal data</a></span>
@@ -149,7 +149,7 @@ const Welcome = () => {
                     </form>
                 </Modal>
 
-      }
+              */}
 
             {/*========login modal============*/}
             {signIn &&
@@ -189,7 +189,7 @@ const Welcome = () => {
                         <legend>
                             <label htmlFor="password">Password</label>
                             <input type="password" name='password' placeholder='Enter your password' />
-                        </legend>*/}
+                              </legend>*/}
 
                         <span>
                             <a href="forgot-password" id='forgot-password' onClick={openPass}>Forgot Password?</a>
@@ -210,7 +210,7 @@ const Welcome = () => {
                         </div>
                     </form>
                   </Modal>
-                }
+            }
 
             {welcome &&
                 <Modal1 Stop={Closewelcome}>
@@ -223,7 +223,7 @@ const Welcome = () => {
                 </Modal1>
             }
 
-          {/*==========forgot password modal==========*/}
+          {/*==========forgot password modal==========}
           {forgotpass &&
           <Modal2 closedPass={closePass}>
             <form action="" className='forgotPassword-form'>
@@ -277,7 +277,7 @@ const Welcome = () => {
           </Modal2>
         */}
 
-        {/*========change password============*/}
+        {/*========change password============}
 
         {//forgotpass &&
           <Modal2>
@@ -311,7 +311,7 @@ const Welcome = () => {
             </form>
           </Modal2>
 
-        }
+                */}
 
       </div>
 
