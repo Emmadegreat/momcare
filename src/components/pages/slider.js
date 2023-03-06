@@ -22,11 +22,11 @@ const Slider = () => {
             <Carousel
                 style={{textAlign:"center"}}
                 dots={true}
-                autoplay={true}
+                //autoplay={true}
                 dotPosition="bottom"
                 pauseOnDotsHover={false}
                 pauseOnHover={false}
-                //draggable={false}
+                draggable={false}
                 ref={ref}
             >
                 <div style={{ backgroundColor: "red" }}>
