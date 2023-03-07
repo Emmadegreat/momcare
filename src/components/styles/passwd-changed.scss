@@ -7,7 +7,7 @@
         text-decoration: none;
     }
 
-    .hello-users{
+    .passwd-changed{
         //padding: 4rem 1.6rem;
 
         & .wrapper{
@@ -24,19 +24,22 @@
             text-align: center;
 
             & h4{
-                line-height: 2;
-                font-size: 22px;
+                margin-bottom: 2rem;
+                font-size: 18px;
                 font-family: Poppins;
                 font-weight: 600;
             }
+
+            & p{
+                line-height: 1.6;
+            }
             & a{
                 margin-top: 1.6rem;
-                color: #B03264;
-                padding: 0.4rem 0.6rem;
-                width: 80%;
-                text-align: start;
-                border-radius: 2rem;
-                border: 1px solid #B03264;
+                color: #fff;
+                padding: 0.3rem;
+                width: 30px;
+                height: 30px;
+                background: #6D1538;
             }
         }
 

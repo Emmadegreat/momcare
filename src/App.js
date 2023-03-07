@@ -8,6 +8,7 @@ import HelloUsers from './components/pages/hello-users';
 import Login from './components/pages/login'
 import NewPass from './components/pages/new-pass';
 import Otp from './components/pages/otp';
+import PasswdChanged from './components/pages/passwd-changed'
 //import Modal from './components/pages/modal'
 import React from 'react'
 import Register from './components/pages/register'
@@ -20,7 +21,7 @@ function App() {
 
     <div>
 
-      <HelloUsers/>
+      <PasswdChanged/>
 
     </div>
 

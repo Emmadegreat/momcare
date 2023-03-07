@@ -10,7 +10,7 @@
   a {
     text-decoration: none;
   }
-  .hello-users .wrapper {
+  .passwd-changed .wrapper {
     position: absolute;
     background: #fff;
     top: 25%;
@@ -23,19 +23,21 @@
     align-items: center;
     text-align: center;
   }
-  .hello-users .wrapper h4 {
-    line-height: 2;
-    font-size: 22px;
+  .passwd-changed .wrapper h4 {
+    margin-bottom: 2rem;
+    font-size: 18px;
     font-family: Poppins;
     font-weight: 600;
   }
-  .hello-users .wrapper a {
-    margin-top: 1.6rem;
-    color: #B03264;
-    padding: 0.4rem 0.6rem;
-    width: 80%;
-    text-align: start;
-    border-radius: 2rem;
-    border: 1px solid #B03264;
+  .passwd-changed .wrapper p {
+    line-height: 1.6;
   }
-}/*# sourceMappingURL=hello-users.css.map */
+  .passwd-changed .wrapper a {
+    margin-top: 1.6rem;
+    color: #fff;
+    padding: 0.3rem;
+    width: 30px;
+    height: 30px;
+    background: #6D1538;
+  }
+}/*# sourceMappingURL=passwd-changed.css.map */
