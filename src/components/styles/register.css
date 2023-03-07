@@ -1,1 +1,75 @@
-/*# sourceMappingURL=register.css.map */
+@media (max-width: 768px) {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+  * {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+  }
+  a {
+    text-decoration: none;
+  }
+  .register {
+    top: 100px;
+    position: relative;
+    left: 10px;
+    right: 10px;
+    margin: auto;
+  }
+  .register .signup-form {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .register .signup-form h4 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 1.6rem;
+    font-family: Poppins;
+  }
+  .register .signup-form button {
+    width: 70%;
+    height: 34px;
+    margin-top: 2rem;
+    border-radius: 0.3rem;
+    border: 1px solid #6c5f64;
+    color: #000;
+    padding: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  .register .signup-form #reg-link {
+    text-align: center;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0rem 0.4rem 0rem;
+    color: #D5D5D5;
+  }
+  .register .signup-form #reg-link a {
+    color: #B03264;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .register .signup-form .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin: auto;
+  }
+  .register .signup-form .checkbox-wrapper input {
+    width: 15px;
+    background: #D5D5D5;
+  }
+  .register .signup-form .checkbox-wrapper span {
+    font-size: 0.7rem;
+  }
+  .register .signup-form .checkbox-wrapper span a {
+    color: #B03264;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=register.css.map */

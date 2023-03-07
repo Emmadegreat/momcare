@@ -1,0 +1,50 @@
+@media (max-width:768px){
+    @import './config';
+    *{
+        @include general;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .hello-users{
+        //padding: 4rem 1.6rem;
+        top: 5%0;
+        bottom: o;
+        right: 0;
+        left: 0;
+        //position: relative;
+        background: #5f5959;
+
+        & .wrapper{
+            position: absolute;
+            background: #fff;
+            top: 25%;
+            right: 10%;
+            left: 10%;
+            padding: 2rem 1rem;
+            border-radius: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            & h4{
+                line-height: 2;
+                font-size: 22px;
+                font-family: Poppins;
+                font-weight: 600;
+            }
+            & a{
+                margin-top: 1.6rem;
+                color: #B03264;
+                padding: 0.4rem 0.6rem;
+                width: 80%;
+                text-align: start;
+                border-radius: 2rem;
+                border: 1px solid #B03264;
+            }
+        }
+
+    }
+}
