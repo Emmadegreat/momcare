@@ -9,6 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import Input from '@mui/material/Input';
 import InputAdornment from '@mui/material/InputAdornment';
 import InputLabel from '@mui/material/InputLabel';
+import Login from './login'
 import MenuItem from '@mui/material/MenuItem';
 import Modal from './modal'
 import Modal1 from './modal1'
@@ -65,10 +66,12 @@ const Welcome = () => {
             </article>
           </div>
           <div className="bottom-links">
-            <span href="../pages/login.js" className="link sign-in" onClick={openSignIn}>sign in</span>
+            <span href="" className="link sign-in" onClick={openSignIn}>sign in</span>
             <span href="../pages/register" className="link sign-up" onClick={ Open }>sign up</span>
           </div>
         </div>
+
+
 
         {/*========register modal============*/}
         {/*isModalOpened &&
@@ -152,7 +155,7 @@ const Welcome = () => {
               */}
 
             {/*========login modal============*/}
-            {signIn &&
+            {/*signIn &&
                 <Modal onClose={closeSignIn}>
                     <form action="" className='loginForm'>
                         <h4>Welcome Back</h4>
@@ -189,7 +192,7 @@ const Welcome = () => {
                         <legend>
                             <label htmlFor="password">Password</label>
                             <input type="password" name='password' placeholder='Enter your password' />
-                              </legend>*/}
+                              </legend>}
 
                         <span>
                             <a href="forgot-password" id='forgot-password' onClick={openPass}>Forgot Password?</a>
@@ -199,18 +202,9 @@ const Welcome = () => {
 
                         <span id='reg-link1'>Don't have an account?  <a href="sign-up" id='sign-up'>  Sign Up</a>
                         </span>
-
-                        <p id='sign-para'>_________<span id='sign'>Sign In with</span>________</p>
-
-                        <div className="signup-wrapper">
-                            <a href=""><FaFacebook/></a>
-                            <a href=""><FaGoogle/></a>
-                            <a href=""><FaGithub/></a>
-                            <a href=""><FaTwitter/></a>
-                        </div>
                     </form>
                   </Modal>
-            }
+              }
 
             {welcome &&
                 <Modal1 Stop={Closewelcome}>
