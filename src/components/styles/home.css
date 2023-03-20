@@ -1,1 +1,230 @@
-/*# sourceMappingURL=home.css.map */
+@media (max-width: 768px) {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+  * {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+  }
+  a {
+    text-decoration: none;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .first-sect {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    background-color: #B03264;
+    padding: 2rem 1rem;
+    color: #fff;
+  }
+  .home .first-sect i {
+    font-size: 0.7rem;
+  }
+  .home .carousel-sect {
+    padding: 0.8rem;
+    background-color: #fff;
+    color: #333;
+  }
+  .home .carousel-sect .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+  }
+  .home .carousel-sect .card img {
+    max-width: 100%;
+    height: 110px;
+    border-radius: 50%;
+    -o-object-fit: center;
+       object-fit: center;
+    place-items: center;
+  }
+  .home .carousel-sect .card p {
+    flex-basis: 50%;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .home .tip-sect {
+    display: flex;
+    margin: 1rem 0.8rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(208, 192, 99);
+  }
+  .home .tip-sect .card {
+    padding: 0.5rem;
+  }
+  .home .tip-sect .card h4 {
+    color: #B03264;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+  .home .tip-sect .card p {
+    margin: 0.3rem 0rem 0rem 0.7rem;
+    line-height: 1.4;
+    font-size: 0.9rem;
+  }
+  .home .today-sect {
+    display: flex;
+    margin: 1.3rem 0.8rem;
+    flex-direction: column;
+  }
+  .home .today-sect h4 {
+    color: #B03264;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+  .home .today-sect .card {
+    padding: 0.5rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "btn-1 btn-2" "btn-3  btn-4";
+    gap: 0.7rem;
+  }
+  .home .today-sect .card .today-btn {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    height: 70px;
+  }
+  .home .today-sect .card #btn-1, .home .today-sect .card #btn-4 {
+    background-color: #4b0320;
+  }
+  .home .today-sect .card #btn-2, .home .today-sect .card #btn-3 {
+    background-color: #B03264;
+  }
+  .home .upcoming-appointment-sect {
+    display: flex;
+    margin: 1.5rem 0.8rem;
+    flex-direction: column;
+  }
+  .home .upcoming-appointment-sect h4 {
+    color: #B03264;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+  .home .upcoming-appointment-sect .card {
+    padding: 0.5rem 0rem;
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+  }
+  .home .upcoming-appointment-sect .card img {
+    max-width: 80px;
+    height: 80px;
+    -o-object-fit: center;
+       object-fit: center;
+    place-items: center;
+  }
+  .home .upcoming-appointment-sect .card .doctor {
+    position: relative;
+    top: 0.7rem;
+    left: 2rem;
+    line-height: 1.4;
+  }
+  .home .upcoming-appointment-sect .card .doctor p {
+    color: #7d7474;
+  }
+  .home .upcoming-appointment-sect #hr {
+    color: #bd1919;
+    font-size: 700;
+    width: 100%;
+  }
+  .home .upcoming-appointment-sect .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B03264;
+  }
+  .home .available-doc-sect {
+    display: flex;
+    margin: 1.5rem 0.8rem;
+    flex-direction: column;
+  }
+  .home .available-doc-sect .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home .available-doc-sect .card-header a {
+    color: #B03264;
+    text-decoration: underline;
+    font-size: 0.8rem;
+  }
+  .home .available-doc-sect .card-header h4 {
+    color: #B03264;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+  .home .available-doc-sect .card {
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    border: 1px solid rgb(208, 192, 99);
+    border-radius: 0.5rem;
+  }
+  .home .available-doc-sect .card img {
+    max-width: 60px;
+    height: 60px;
+    -o-object-fit: center;
+       object-fit: center;
+    place-items: center;
+  }
+  .home .available-doc-sect .card .doctor {
+    position: relative;
+    top: 0.7rem;
+    left: 0.3rem;
+    line-height: 1.2;
+  }
+  .home .available-doc-sect .card .doctor p {
+    color: #7d7c74;
+  }
+  .home .available-doc-sect .card a {
+    color: #333;
+    background-color: #efd398;
+    padding: 0.2rem;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+  }
+  .home .available-doc-sect #hr {
+    color: #bd1919;
+    font-size: 700;
+    width: 100%;
+  }
+  .home .available-doc-sect .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B03264;
+  }
+  .home .last-sect {
+    display: flex;
+    margin: 1rem 0.8rem;
+    flex-direction: column;
+  }
+  .home .last-sect h4 {
+    color: #B03264;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+  .home .last-sect .card {
+    padding: 0.5rem;
+    border: 1px solid rgb(208, 192, 99);
+    border-radius: 0.5rem;
+  }
+  .home .last-sect .card p {
+    line-height: 1.4;
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=home.css.map */

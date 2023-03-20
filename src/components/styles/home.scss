@@ -1,0 +1,252 @@
+
+@media (max-width:768px){
+    @import './config';
+    *{
+        @include general;
+    }
+    a{
+        text-decoration: none;
+    }
+
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        //align-items: center;
+        //text-align: center;
+
+
+        & .first-sect{
+            display: flex;
+            text-align: start;
+            flex-direction: column;
+            background-color: #B03264;
+            padding: 2rem 1rem;
+            color: #fff;
+
+            & i{
+                font-size: 0.7rem;
+            }
+        }
+        & .carousel-sect{
+            padding: 0.8rem;
+            background-color: #fff;
+            color: #333;
+
+            & .card{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                text-align: start;
+
+
+                & img{
+                    max-width: 100%;
+                    //width: 100px;
+                    height: 110px;
+                    border-radius: 50%;
+                    object-fit: center;
+                    place-items: center;
+                }
+                & p{
+                    flex-basis: 50%;
+                    font-size: 0.9rem;
+                    line-height: 1.6;
+                }
+            }
+        }
+        & .tip-sect{
+            display: flex;
+            margin: 1rem 0.8rem;
+            flex-direction: column;
+            border-radius: 0.5rem;
+            border: 1px solid rgb(208, 192, 99);
+
+            & .card{
+                padding: 0.5rem;
+
+                & h4{
+                    @include h4(#B03264);
+                }
+
+                & p{
+                    margin: 0.3rem 0rem 0rem 0.7rem;
+                    line-height: 1.4;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        & .today-sect{
+            display: flex;
+            margin: 1.3rem 0.8rem;
+            flex-direction: column;
+
+            & h4{
+                @include h4(#B03264);
+            }
+
+            & .card{
+                padding: 0.5rem 0rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:"btn-1 btn-2"
+                                    "btn-3  btn-4"
+                                ;
+                gap: 0.7rem;
+
+                & .today-btn{
+                    text-align: center;
+                    padding: 0.5rem 1rem;
+                    color: #fff;
+                    border-radius: 0.5rem;
+                    font-weight: 600;
+                    height: 70px;
+
+                }
+
+                & #btn-1, #btn-4{
+                    background-color: #4b0320;
+                }
+                & #btn-2, #btn-3{
+                    background-color: #B03264;
+                }
+            }
+        }
+        & .upcoming-appointment-sect{
+            display: flex;
+            margin: 1.5rem 0.8rem;
+            flex-direction: column;
+
+            & h4{
+                @include h4(#B03264);
+            }
+
+            & .card{
+                padding: 0.5rem 0rem;
+                display: flex;
+                align-items: center;
+                margin-left: 1.5rem;
+
+                & img{
+                    max-width: 80px;
+                    //width: 100px;
+                    height: 80px;
+                    object-fit: center;
+                    place-items: center;
+                }
+
+                & .doctor{
+                    position: relative;
+                    top: 0.7rem;
+                    left: 2rem;
+                    line-height: 1.4;
+
+                    & p{
+                        color: #7d7474;
+                    }
+                }
+
+            }
+            & #hr{
+                color: #bd1919;
+                font-size: 700;
+                width: 100%;
+            }
+            & .date{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #B03264;
+            }
+        }
+        & .available-doc-sect{
+            display: flex;
+            margin: 1.5rem 0.8rem;
+            flex-direction: column;
+
+            & .card-header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                & a{
+                    color: #B03264;
+                    text-decoration: underline;
+                    font-size: 0.8rem;
+                }
+
+                & h4{
+                    @include h4(#B03264);
+                }
+            }
+
+            & .card{
+                padding: 0.3rem;
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                justify-content: space-between;
+                border: 1px solid rgb(208, 192, 99);
+                border-radius: 0.5rem;
+
+                & img{
+                    max-width: 60px;
+                    //width: 100px;
+                    height: 60px;
+                    object-fit: center;
+                    place-items: center;
+                }
+
+                & .doctor{
+                    position: relative;
+                    top: 0.7rem;
+                    left: 0.3rem;
+                    line-height: 1.2;
+                    & p{
+                        color: #7d7c74;
+                    }
+                }
+                & a{
+                   color: #333;
+                   background-color: #efd398;
+                   padding: 0.2rem;
+                   border-radius: 0.4rem;
+                   font-size: 0.8rem;
+                }
+
+            }
+            & #hr{
+                color: #bd1919;
+                font-size: 700;
+                width: 100%;
+            }
+            & .date{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #B03264;
+            }
+        }
+        & .last-sect{
+            display: flex;
+            margin: 1rem 0.8rem;
+            flex-direction: column;
+            & h4{
+                    @include h4(#B03264);
+            }
+
+            & .card{
+                padding: 0.5rem;
+                border: 1px solid rgb(208, 192, 99);
+                border-radius: 0.5rem;
+
+                & p{
+                    line-height: 1.4;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
